@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.kpbird.myactivityrecognition;
+package com.room5.fitdev;
 
 public final class R {
     public static final class attr {
