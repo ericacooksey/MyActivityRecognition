@@ -8,12 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <LinearLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/switch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enable" />
+
+        <Switch
+            android:id="@+id/enabler_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/switch_layout"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/hello_world" />
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

@@ -47,6 +47,7 @@ public class ActivityRecognitionService extends IntentService {
             i.putExtra("Activity", getType(mostProbableActivity.getType()));
             i.putExtra("Confidence", result.getMostProbableActivity()
                     .getConfidence());
+            i.putExtra("ActivityType", mostProbableActivity.getType());
             sendBroadcast(i);
         }
     }
